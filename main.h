@@ -8,7 +8,7 @@
 typedef struct app_func
 {
 	char *type;/* int, char, string */
-	void (*f)(va_list);
+	void (*f)(va_list arg);
 } type;
 
 

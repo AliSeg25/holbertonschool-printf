@@ -8,13 +8,13 @@
  */
 void print_string(va_list arg)
 {
-	char *varg;
+	char *s;
 	int i;
 
-	varg = va_arg(arg, char*);
+	s = va_arg(arg, char*);
 
-	for (i = 0; varg[i] != '\0'; i++;)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		my_write(varg);
+		my_write(varg[i]);
 	}
 }

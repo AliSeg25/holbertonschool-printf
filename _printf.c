@@ -13,29 +13,35 @@ int _printf(const char *format, ...)
 		{NULL, NULL}
 	};
 
-	int i = 0;
-	int j = 0;
+	unsigned int i = 0;
+	unsigned int j = 0;
+	unsigned int len = 0;
 
 	va_list arg;
 
 	va_start(arg, format);
 
-	for (i = 0; format[i] != '\0'; i++)
+	if (format[0] == '%' || format[1] == '\0' || format == NULL)
+		return (0);
+
+	while (format[i] != '\0')
 	{
 		if (format[i] ==  '%')
 		{
-			for (j = 0; appfunc[j].type != NULL; j++)
+			j = 0;
+			while (appfunc[j].type != NULL)
 			{
-				if (format[i + 1] == *(appfunc[j].type))
-					appfunc[j].f(arg);
-						break;
+				if (format[i + 1] == appfunc[j].type[0])
+				{
+					len = len + appfunc[j].f(arg);
+					i++;
+				}
+				j++;
 			}
 		}
+
 	}
 
-	/*	if (format [i] == '\0')*/
-		/*	break;*/
-
 	va_end(arg);
-	return(0);
+	return(len);
 }

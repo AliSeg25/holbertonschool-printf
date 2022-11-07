@@ -7,7 +7,7 @@
  *Return: (1) print_pourcentage
  */
 
-void print_pourcentage(va_list arg)
+int print_pourcentage(__attribute__((unused))va_list arg)
 {
 
 	my_write('%');

@@ -9,7 +9,7 @@ int _printf(const char *format, ...)
 	type appfunc[] = {
 		{"c", print_char},
 		{"s", print_string},
-		{"%", print_poucentage},
+		{"%", print_pourcentage},
 		{NULL, NULL}
 	};
 
@@ -28,13 +28,13 @@ int _printf(const char *format, ...)
 			{
 				if (format[i + 1] == *(appfunc[j].type))
 					appfunc[j].f(arg);
-				break;
+						break;
 			}
 		}
 	}
 
-	if (format [i] == '\0')
-		break;
+	/*	if (format [i] == '\0')*/
+		/*	break;*/
 
 	va_end(arg);
 	return(0);

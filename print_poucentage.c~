@@ -1,0 +1,15 @@
+#include "main.h"
+
+/**
+ *print_poucentage - print poucentage
+ *@arg: argument
+ *
+ *Return: void
+ */
+
+void print_poucentage(va_list arg)
+{
+
+	my_write('%');
+	return (1);
+}

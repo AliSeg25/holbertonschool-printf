@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * - print character
+ * print_string - print character
  *@arg: argument
  *
  *Return: void
  */
-void print_string(va_list arg)
+int print_string(va_list arg)
 {
 	char *s;
 	int i;
@@ -15,6 +15,8 @@ void print_string(va_list arg)
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		my_write(varg[i]);
+		my_write(s[i]);
 	}
+
+	return (i);
 }

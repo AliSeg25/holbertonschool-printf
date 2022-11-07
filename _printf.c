@@ -34,11 +34,12 @@ int _printf(const char *format, ...)
 				if (format[i + 1] == appfunc[j].type[0])
 				{
 					len = len + appfunc[j].f(arg);
-					i++;
+
 				}
 				j++;
 			}
 		}
+		i++;
 
 	}
 

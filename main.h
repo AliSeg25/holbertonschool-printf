@@ -8,7 +8,7 @@
 typedef struct app_func
 {
 	char *type;/* int, char, string */
-	int (*f)(va_list arg);
+	int (*f)();
 } type;
 
 int print_pourcentage(va_list arg);

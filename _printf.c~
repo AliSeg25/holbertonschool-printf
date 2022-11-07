@@ -1,9 +1,0 @@
-/**
- * _printf - Entry point
- *
- * Return:
- */
-int _printf(const char *format, ...)
-{
-
-}

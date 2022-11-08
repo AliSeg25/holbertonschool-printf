@@ -4,11 +4,17 @@
 #include <limits.h>
 #include <stdio.h>
 #include "main.h"
+/**
+ *struct app_func - struct function
+ *@type: type variable
+ *@f: function pointer
+ *
+ */
 
 typedef struct app_func
 {
-        char *type;/* int, char, string */
-        int (*f)(va_list);
+	char *type;/* int, char, string */
+	int (*f)(va_list);
 } t;
 
 int f__printf(const char *format, t appfunc[], va_list arg);

@@ -3,7 +3,7 @@
 /**
  * print_string - imprimer un string
  * @arg: argument
- * return:  (0);
+ * Return:  (0);
  */
 int print_string(va_list arg)
 {

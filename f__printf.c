@@ -26,7 +26,7 @@ int f__printf(const char *format, t appfunc[], va_list arg)
 					break;
 				}
 			}
-			if (format[i + 1] == '\0')
+			if (format[i] == '\0')
 				break;
 			i = i + 1;
 		}

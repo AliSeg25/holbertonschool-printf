@@ -11,7 +11,6 @@ int f__printf(const char *format, t appfunc[], va_list arg)
 	int i;
 	int j;
 	int longue = 0;
-/*	int c = 0;*/
 
 	for (i = 0; format[i] != '\0'; i++)
 	{
@@ -22,11 +21,10 @@ int f__printf(const char *format, t appfunc[], va_list arg)
 				if (format[i + 1] == *appfunc[j].type)
 				{
 					longue += appfunc[j].f(arg);
-					/*	longue += c;*/
 					break;
 				}
 			}
-			i = i + 1;
+			i++;
 		}
 
 		else

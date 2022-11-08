@@ -6,25 +6,19 @@
  */
 int _printf(const char *format, ...)
 {
-    va_list arg;
+        va_list arg;
+        int len;
 
-    int = len;
+        t appfunc[] = {
+                {"c", print_char},
+                {"s", print_string},
+                {"%", print_pourcentage},
+                {NULL, NULL}
+        };
 
-    t appfunc[] = {
-	    {"c", print_char},
-	    {"s", print_string},
-	    {"%", print_pourcentage},
-	    {NULL, NULL}
-    };
+        va_start(arg, format);
+        len = f__printf(format, appfunc, arg);
+        va_end(arg);
 
-	if(!format)
-	{
-		return (-1);
-	}
-
-	va_start(arg, format);
-	len = f__printf(format, appfunc, arg);
-	va_end(arg);
-
-	return(len);
+        return(len);
 }

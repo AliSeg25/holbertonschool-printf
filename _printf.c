@@ -6,7 +6,7 @@
  */
 int _printf(const char *format, ...)
 {
-        va_list arg;
+	va_list arg;
 	int len;
 
 	t appfunc[] = {
@@ -23,5 +23,5 @@ int _printf(const char *format, ...)
 	len = f__printf(format, appfunc, arg);
 	va_end(arg);
 
-        return(len);
+	return(len);
 }

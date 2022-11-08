@@ -7,17 +7,17 @@
  */
 int print_string(va_list arg)
 {
-        char *s;
-        int i;
+	char *s;
+	int i;
 
-        s = va_arg(arg, char*);
+	s = va_arg(arg, char*);
 	if (s == NULL)
 		s = "(null)";
 
-        for (i = 0; s[i] != '\0'; i++)
-        {
-                my_write(s[i]);
-        }
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		my_write(s[i]);
+	}
 
-        return (i);
+	return (i);
 }

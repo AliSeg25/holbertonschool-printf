@@ -7,6 +7,6 @@
 int print_pourcentage(__attribute__((unused))va_list arg)
 {
 
-        my_write('%');
-        return (1);
+	my_write('%');
+	return (1);
 }

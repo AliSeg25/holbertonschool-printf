@@ -11,6 +11,17 @@ int f__printf(const char *format, t appfunc[], va_list arg)
 	int i;
 	int j;
 	int longue = 0;
+	char *tab = {"K!"};
+	int p;
+
+	for (p = 0; tab[p] != '\0'; p++)
+	{
+		if (format[0] == '%' && format[1] == tab[p])
+		{
+			 my_write(format[0]);
+			 my_write(format[1]);
+		}
+	}
 
 	if (format[0] == '%' && format[1] == '\0')
 		return (-1);

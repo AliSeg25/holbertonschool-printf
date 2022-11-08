@@ -14,7 +14,6 @@ int f__printf(const char *format, t appfunc[], va_list arg)
 
 	if (format[0] == '%' && format[1] == '\0')
 		return (-1);
-
 	for (i = 0; format[i] != '\0'; i++)
 	{
 		if (format[i] == '%')
@@ -29,7 +28,7 @@ int f__printf(const char *format, t appfunc[], va_list arg)
 			}
 			if (appfunc[j].type == NULL)
 			{
-				if(format[i + 1] != '\0')
+				if (format[i + 1] != '\0')
 				{
 					my_write(format[0]);
 					my_write(format[1]);

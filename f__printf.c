@@ -25,10 +25,11 @@ int f__printf(const char *format, t appfunc[], va_list arg)
                         longue += c;
                         break;
                 }
-		else if (format[i + 1] != *appfunc[j].type)
-			     return (-1);
             }
             i = i + 1;
+
+	    if (format[i + 1] != *appfunc[j].type)
+		    return (-1);
         }
 	else
             {

@@ -1,17 +1,17 @@
-#include <limits.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
 
 /**
  * main - Entry point
  *
- * Return: Always 0
+ * Return: 0 on success, error code otherwise
  */
 int main(void)
 {
 	int len, len2;
 
-//	len = _printf("%c", 'S');
+	len = _printf("%c", 'S');
 	len2 = printf("%c", 'S');
 	fflush(stdout);
 	if (len != len2)

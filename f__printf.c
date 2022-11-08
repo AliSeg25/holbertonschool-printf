@@ -29,15 +29,12 @@ int f__printf(const char *format, t appfunc[], va_list arg)
 			}
 			if (appfunc[j].type == NULL && format[i + 1] != '\0')
 			{
-				if (format[i + 1] != '\0')
-				{
 					my_write(format[0]);
 					my_write(format[1]);
 					longue = longue + 2;
-				}
-				else
-					return (-1);
 			}
+			else
+				return (-1);
 			i++;
 		}
 		else

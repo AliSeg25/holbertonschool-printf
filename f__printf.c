@@ -29,8 +29,6 @@ int f__printf(const char *format, t appfunc[], va_list arg)
 					break;
 				}
 			}
-			i++;
-
 			for (p = 0; tab[p] != '\0'; p++)
 			{
 				if (format[0] == '%' && format[1] == tab[p])
@@ -41,6 +39,7 @@ int f__printf(const char *format, t appfunc[], va_list arg)
 				}
 
 			}
+			i++;
 		}
 		else
 		{

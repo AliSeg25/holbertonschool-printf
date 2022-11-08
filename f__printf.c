@@ -25,6 +25,8 @@ int f__printf(const char *format, t appfunc[], va_list arg)
                         longue += c;
                         break;
                 }
+		else
+			return (-1);
             }
             i = i + 1;
         }

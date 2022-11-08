@@ -21,6 +21,8 @@ int f__printf(const char *format, t appfunc[], va_list arg)
 				if (format[i + 1] == *appfunc[j].type)
 				{
 					longue += appfunc[j].f(arg);
+					if (longue == -1)
+						return (-1);
 					break;
 				}
 			}

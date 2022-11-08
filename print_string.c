@@ -1,5 +1,5 @@
 #include "main.h"
-#include "main.h"
+
 /**
  * print_string - imprimer un string
  * @arg: argument
@@ -11,6 +11,8 @@ int print_string(va_list arg)
         int i;
 
         s = va_arg(arg, char*);
+	if (s == NULL)
+		return ("null)");
 
         for (i = 0; s[i] != '\0'; i++)
         {

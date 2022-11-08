@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdarg.h>
 /**
  *_strelen - function that return length
  *@: parametr of the function
@@ -30,12 +31,11 @@ int _printf(const char *format, ...)
 		{"s", print_string},
 		{NULL, NULL}
 	};
+	va_list arg;
 
 	int i = 0;
 	int len;
 	len = _strlen(format);
-      	va_list arg;
-
 
 	va_start(arg, format);
 	for (i = 0; format[i] != '\0'; i++)

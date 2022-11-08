@@ -22,11 +22,13 @@ int f__printf(const char *format, t appfunc[], va_list arg)
                 if (format[i + 1] == *appfunc[j].type)
                 {
                         c  = appfunc[j].f(arg);
+
+			if (format[i + 1] == '%')
+				return (-1);
+			
                         longue += c;
                         break;
                 }
-		else
-			return (-1);
             }
             i = i + 1;
         }

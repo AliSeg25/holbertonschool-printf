@@ -14,6 +14,7 @@ typedef struct app_func
 int _printf(const char *format, ...);
 int print_char(va_list arg);
 int print_string(va_list arg);
-int _strlen(char *s);
+int _strlen(const char *s);
+int my_write(char c);
 
 #endif

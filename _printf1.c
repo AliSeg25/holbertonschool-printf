@@ -13,7 +13,7 @@ int _strlen(const char *s)
 		len++;
 		s++;
 	}
-	return (len);
+	return (len - 1);
 }
 
 /**
@@ -43,7 +43,6 @@ int _printf(const char *format, ...)
 		if (format[i] != '%')
 		{
 			my_write(format[i]);
-			continue;
 		}
 		else
 		{
@@ -51,6 +50,7 @@ int _printf(const char *format, ...)
 			if (format[i] == '%' && format[i + 1] == 'c')
 			{
 				appfunc[0].f(arg);
+				i += 1;
 			}
 		}
 	}

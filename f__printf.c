@@ -8,7 +8,7 @@
  */
 int f__printf(const char *format, t appfunc[], va_list arg)
 {
-        int i;
+	int i;
 	int j;
 	int longue = 0;
 	int c = 0;

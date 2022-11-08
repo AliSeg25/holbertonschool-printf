@@ -19,7 +19,7 @@ int f__printf(const char *format, t appfunc[], va_list arg)
         {
             for (j = 0; appfunc[j].type != NULL; j++)
             {
-                if (format[i + 1] == appfunc[j].type[0])
+                if (format[i + 1] == *appfunc[j].type)
                 {
                         c  = appfunc[j].f(arg);
                         longue += c;

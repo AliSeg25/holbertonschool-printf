@@ -20,7 +20,9 @@ int f__printf(const char *format, t appfunc[], va_list arg)
 		{
 			 my_write(format[0]);
 			 my_write(format[1]);
+			 longue += my_write(format[1]);
 		}
+		return (longue);
 	}
 
 	if (format[0] == '%' && format[1] == '\0')

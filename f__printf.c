@@ -22,9 +22,10 @@ int f__printf(const char *format, t appfunc[], va_list arg)
 				if (format[i + 1] == *appfunc[j].type)
 				{
 					c  = appfunc[j].f(arg);
+					longue += c;
+					
 					if (format[i + 1] == '\0')
 						return (-1);
-					longue += c;
 					break;
 				}
 			}

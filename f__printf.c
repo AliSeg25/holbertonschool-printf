@@ -19,7 +19,7 @@ int f__printf(const char *format, t appfunc[], va_list arg)
         {
             for (j = 0; appfunc[j].type != NULL; j++)
             {
-                if (format[i + 1] == *appfunc[j].type)
+                if (format[i + 1] == appfunc[j].type[0])
                 {
                         c  = appfunc[j].f(arg);
                         longue += c;
@@ -27,10 +27,8 @@ int f__printf(const char *format, t appfunc[], va_list arg)
                 }
             }
             i = i + 1;
-
-	    if (format[i + 1] != *appfunc[j].type)
-		    return (-1);
         }
+
 	else
             {
                 my_write(format[i]);

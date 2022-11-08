@@ -1,4 +1,21 @@
 #include "main.h"
+/**
+ *_strlen - function that return length
+ *@len: parametre of the function
+ *
+ *Return: length
+ */
+int _strlen (char *s)
+{
+	int len = 0;
+	while (*s)
+	{
+		len++;
+		s++;
+	}
+	return (len);
+}
+
 
 /**
  * print_string - print character
@@ -8,15 +25,9 @@
  */
 int print_string(va_list arg)
 {
-	char *s;
-	int i;
+	char *c;
 
-	s = va_arg(arg, char*);
-
-	for (i = 0; s[i] != '\0'; i++)
-	{
-		my_write(s[i]);
-	}
-
-	return (i);
+	c = va_arg(arg, char *);
+	write(1, c, _strlen(c));
+	return (_strlen(c + 1));
 }

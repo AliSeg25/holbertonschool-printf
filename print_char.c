@@ -1,4 +1,6 @@
 #include "main.h"
+
+
 /**
  *print_char - print character
  *@arg: argument
@@ -8,8 +10,11 @@
 
 int print_char(va_list arg)
 {
+	char c;
 
-	my_write(va_arg(arg, int));
+	c = va_arg(arg, int);
+        write(1, &c, 1);
 
 	return (1);
+
 }

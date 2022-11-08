@@ -8,7 +8,11 @@
 typedef struct app_func
 {
 	char *type;/* int, char, string */
+<<<<<<< HEAD
 	int  (*f)(va_list arg);
+=======
+	int (*f)();
+>>>>>>> df74f57d3655f29a13e8c24b9b0d19375a4b8d8e
 } type;
 
 int _printf(const char *format, ...);

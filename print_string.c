@@ -1,4 +1,5 @@
 #include "main.h"
+<<<<<<< HEAD
 /**
  *_strlen - function that return length
  *@len: parametre of the function
@@ -17,6 +18,8 @@ int _strlen (char *s)
 }
 
 
+=======
+>>>>>>> df74f57d3655f29a13e8c24b9b0d19375a4b8d8e
 /**
  * print_string - print character
  *@arg: argument

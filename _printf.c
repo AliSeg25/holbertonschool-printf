@@ -15,12 +15,12 @@ int _printf(const char *format, ...)
 		{NULL, NULL}
 	};
 
-
+	int i = 0;
 	va_list arg;
 
 
 	va_start(arg, format);
-	for (format; *format; format++)
+	for (i = 0; format[i] != '\0'; i++)
 	{
 		if (*format != '%')
 		{
@@ -29,8 +29,7 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
-			format++;
-			if (*format == 'c')
+			if (format[i + 1] == 'c')
 				appfunc[0].f(arg);
 		}
 	}

@@ -27,7 +27,7 @@ int f__printf(const char *format, t appfunc[], va_list arg)
 					break;
 				}
 			}
-			if (appfunc[j].type == NULL && format[i + 1] != ' ')
+			if (format[i + 1] != ' ')
 			{
 				if (format[i + 1] != '\0')
 				{

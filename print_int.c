@@ -9,7 +9,9 @@
 int print_int(va_list arg)
 {
 	int num;
+	int len = 0;
 	num = va_arg(arg, int);
-	my_write(num);
-	return (4);
+	len += my_write(num + '0');
+	printf("len = %d\n", len);
+	return (len);
 }

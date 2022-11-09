@@ -1,16 +1,16 @@
 #include "main.h"
 /**
- *f__printf - elle nous permet d'appeler la bonne fonction:
- * @format: la string
- * @appfunc: &aa
- * @arg: aze
- * Return: .f
+ *f__printf - it allows us to call the correct function
+ * @format: string
+ * @appfunc: tableau de stucture
+ * @arg: augument
+ * Return: (len)
  */
 int f__printf(const char *format, t appfunc[], va_list arg)
 {
 	int i;
 	int j;
-	int longue = 0;
+	int len = 0;
 
 	if (format[0] == '%' && format[1] == '\0')
 		return (-1);
@@ -22,7 +22,7 @@ int f__printf(const char *format, t appfunc[], va_list arg)
 			{
 				if (format[i + 1] == *appfunc[j].type)
 				{
-					longue += appfunc[j].f(arg);
+					len += appfunc[j].f(arg);
 					break;
 				}
 			}
@@ -32,7 +32,7 @@ int f__printf(const char *format, t appfunc[], va_list arg)
 				{
 					my_write(format[i]);
 					my_write(format[i + 1]);
-					longue = longue + 2;
+					len = len + 2;
 				}
 				else
 					return (-1);
@@ -42,9 +42,9 @@ int f__printf(const char *format, t appfunc[], va_list arg)
 		else
 		{
 			my_write(format[i]);
-			longue++;
+			len++;
 		}
 
 	}
-	return (longue);
+	return (len);
 }

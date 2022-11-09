@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * print_pourcentage - imprimer sa
+ * print_pourcentage - function that print %
  * @arg: argument
- * Return: aaaa
+ * Return: (1)
  */
 int print_pourcentage(__attribute__((unused))va_list arg)
 {

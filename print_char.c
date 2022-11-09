@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * print_char - imprimer char
- * @arg: arguemznt
+ * print_char - function that print char
+ * @arg: arguement
  * Return: return (1);
  */
 int print_char(va_list arg)

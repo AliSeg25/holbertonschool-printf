@@ -1,8 +1,9 @@
 #include "main.h"
 /**
- * _printf - elle nous permet d'appeler la bonne fonction:
- * @format: la string
- * Return: .f
+ * _printf - it sends the format the arguments and the array
+ *to the function f__printf
+ * @format: string
+ * Return: (len)
  */
 int _printf(const char *format, ...)
 {

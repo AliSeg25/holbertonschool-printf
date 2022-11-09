@@ -13,7 +13,7 @@ int f__printf(const char *format, t appfunc[], va_list arg)
 	int longue = 0;
 
 	if (format[0] == '%' && format[1] == '\0')
-		return (1);
+		return (0);
 	for (i = 0; format[i] != '\0'; i++)
 	{
 		if (format[i] == '%')

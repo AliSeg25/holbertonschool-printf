@@ -26,7 +26,7 @@ int f__printf(const char *format, t appfunc[], va_list arg)
 					break;
 				}
 			}
-			if (appfunc[j].type == NULL)
+			/**			if (appfunc[j].type == NULL)
 			{
 				if (format[i + 1] != '\0')
 				{
@@ -36,7 +36,7 @@ int f__printf(const char *format, t appfunc[], va_list arg)
 				}
 				else
 					return (-1);
-			}
+					}*/
 			i++;
 		}
 		else

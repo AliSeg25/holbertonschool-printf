@@ -1,9 +1,8 @@
 #include "main.h"
-
 /**
- * print_string - imprimer un string
+ * print_string - function that print string
  * @arg: argument
- * Return:  (0);
+ * Return:  (i);
  */
 int print_string(va_list arg)
 {

@@ -2,7 +2,7 @@
 /**
  * print_string - function that print string
  * @arg: argument
- * Return:  (i);
+ * Return: (i);
  */
 int print_string(va_list arg)
 {

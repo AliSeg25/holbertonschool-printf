@@ -2,7 +2,8 @@
 
 /**
  *print_int - function that print a number
- *@num: number
+ *
+ *@arg: argument
  *
  *Return: length
  */

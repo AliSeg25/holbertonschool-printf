@@ -13,7 +13,7 @@ int f__printf(const char *format, t appfunc[], va_list arg)
 	int longue = 0;
 
 	if (format[0] == '%' && format[1] == '\0')
-		return (0);
+		return (-1);
 	for (i = 0; format[i] != '\0'; i++)
 	{
 		if (format[i] == '%')
@@ -23,7 +23,7 @@ int f__printf(const char *format, t appfunc[], va_list arg)
 				if (format[i + 1] == *appfunc[j].type)
 				{
 					longue += appfunc[j].f(arg);
-					break;
+					/*break;*/
 				}
 			}
 			if (appfunc[j].type == NULL)
@@ -35,7 +35,7 @@ int f__printf(const char *format, t appfunc[], va_list arg)
 					longue = longue + 2;
 				}
 				else
-					return (1);
+					return (-1);
 			}
 			i++;
 		}

@@ -17,8 +17,8 @@ int print_int(va_list arg)
 
 	if (num < 0)
 	{
-		len += my_write(num);
-		/*num *= -1;*/
+		len += my_write('-');
+		num *= -1;
 
 	}
 	while ((num / div) > 9)

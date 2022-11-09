@@ -30,8 +30,8 @@ int f__printf(const char *format, t appfunc[], va_list arg)
 			{
 				if (format[i + 1] != '\0')
 				{
-					my_write(format[0]);
-					my_write(format[1]);
+					my_write(format[i]);
+					my_write(format[i + 1]);
 					longue = longue + 2;
 				}
 				else

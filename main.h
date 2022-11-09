@@ -4,11 +4,11 @@
 #include <limits.h>
 #include <stdio.h>
 #include "main.h"
+
 /**
  *struct app_func - struct function
  *@type: type variable
  *@f: function pointer
- *
  */
 
 typedef struct app_func
@@ -24,4 +24,5 @@ int _printf(const char *format, ...);
 int print_char(va_list arg);
 int print_string(va_list arg);
 int print_int(va_list arg);
+
 #endif

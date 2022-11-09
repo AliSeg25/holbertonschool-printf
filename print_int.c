@@ -10,7 +10,14 @@ int print_int(va_list arg)
 {
 	int num;
 	int len = 0;
+
 	num = va_arg(arg, int);
+
+	if (num < 0)
+	{
+		len += my_write('-');
+
+	}
 	len += my_write(num + '0');
 	return (len);
 }

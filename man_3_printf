@@ -1,0 +1,26 @@
+.TH _printf.c 1 "10/11/2022" "V.1" "_printf man page"
+.SH NAME
+_printf \- print
+.SH SYNOPSYS
+_printf FORMAT [ARGUMENT]...
+.SH DESCRIPTION
+_Printf is the function that prints a set of characters set as parameters
+.SH OPTIONS
+There are many options
+.TP
+\fB-%c\fP
+%c : Print a single character.
+.TP
+\fB-%s\fP
+%s : Print a string.
+.TP
+\fB-%%\fP
+%% : Print a percent sign.
+.TP
+\fB-%d\fP
+%d : Print a decimal (base 10) number.
+.TP
+\fB-%i\fP
+%i : Print a integer in base 10.
+.SH AUTHOR
+Caudia Bura ; Ali Segueg

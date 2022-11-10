@@ -1,10 +1,5 @@
 ## Project _printf from Holberton School Paris
 
-## Team
-
-* Ali Segueg
-* Claudia Bura
-
 _printf is the first collaborative project
 
 ## Description

@@ -5,8 +5,9 @@
  * @appfunc: tableau de stucture
  * @arg: augument
  * Return: (len)
- */
-int f__printf(const char *format, t appfunc[], va_list arg)
+ *int f__printf(const char *format, t appfunc[], va_list arg)
+*/
+int f__printf(t appfunc[], const char *format, va_list arg)
 {
 	int i;
 	int j;

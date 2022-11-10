@@ -1,4 +1,4 @@
-## Project _printf from <font color="pink">Holberton School Paris</font>
+## Project _printf from Holberton School Paris
 
 ## Team
 

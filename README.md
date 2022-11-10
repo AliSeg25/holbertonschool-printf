@@ -31,7 +31,7 @@ For this project we have treated the following cases:
 * i integer
 
 ## Examples
-** %c **
+**%c**
 ```
 _printf("Character:[%c]\n", 'H');
 printf("Character:[%c]\n", 'H');
@@ -41,7 +41,7 @@ printf("Character:[%c]\n", 'H');
 Character:[H]
 Character:[H]
 ```
-** %s **
+**%s**
 ```
 _printf("String:[%s]\n", "I am a string !");
 printf("String:[%s]\n", "I am a string !");
@@ -51,7 +51,7 @@ printf("String:[%s]\n", "I am a string !");
 String:[I am a string !]
 String:[I am a string !]
 ```
-** %% **
+**%%**
 ```
 len = _printf("Percent:[%%]\n");
 len2 = printf("Percent:[%%]\n");
@@ -62,7 +62,7 @@ len2 = printf("Percent:[%%]\n");
 Percent:[%]
 Percent:[%]
 ```
-** %d **
+**%d**
 ```
 _printf("Negative:[%d]\n", -762534);
 printf("Negative:[%d]\n", -762534);
@@ -72,7 +72,7 @@ printf("Negative:[%d]\n", -762534);
 Negative:[-762534]
 Negative:[-762534]
 ```
-** %d and % i **
+**%d and % i**
 ```
 _printf("Length:[%d, %i]\n", len, len);
 printf("Length:[%d, %i]\n", len2, len2);

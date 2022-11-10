@@ -11,7 +11,9 @@ _printf is the first collaborative project
 The _printf function sends a formatted string to the standard output.
 
 #### Prototype
+```
 int _printf(const char * format);
+```
 
 format represents, as its name suggests, what the output will be made of
 (integer, string...). Its principle is as follows: each time there is a %,
@@ -29,6 +31,14 @@ For this project we have treated the following cases:
 * % character
 * d integer
 * i integer
+
+##Requirements
+
+* Compiled command: ``` gcc -Wall -Werror -Wextra -pedantic -std=gnu89
+-Wno-format *.c ```
+* Header file should be included guarded
+* Prototypes should be included in header file
+* Not more than 5 functions per file
 
 ## Examples
 **%c**
@@ -87,5 +97,5 @@ If succesful the total number of characters written is returned.On
 failure a nevative number is returned
 
 
-**MADE BY**
+## Authors
 Ali Segueg and Claudia Bura

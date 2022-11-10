@@ -17,6 +17,7 @@ typedef struct app_func
 	int (*f)(va_list);
 } t;
 
+int f__printf(t appfunc[], const char *format, va_list arg);
 int f__printf(const char *format, t appfunc[], va_list arg);
 int print_pourcentage(va_list arg);
 int my_write(char c);

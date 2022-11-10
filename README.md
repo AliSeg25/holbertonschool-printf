@@ -32,7 +32,7 @@ For this project we have treated the following cases:
 * d integer
 * i integer
 
-##Requirements
+## Requirements
 
 * Compiled command: ``` gcc -Wall -Werror -Wextra -pedantic -std=gnu89
 -Wno-format *.c ```

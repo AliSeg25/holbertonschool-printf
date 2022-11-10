@@ -87,5 +87,5 @@ If succesful the total number of characters written is returned.On
 failure a nevative number is returned
 
 
-MADE BY
+**MADE BY**
 Ali Segueg and Claudia Bura

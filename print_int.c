@@ -15,7 +15,7 @@ int print_int(va_list arg)
 
 	num = va_arg(arg, int);
 
-	if (num < 0 )
+	if (num < 0)
 	{
 		len += my_write('-');
 		num *= -1;

@@ -23,8 +23,7 @@ int _printf(const char *format, ...)
 		return (-1);
 
 	va_start(arg, format);
-/**	len = f__printf(format, appfunc, arg);**/
-	len = f__printf(appfunc, format, arg);
+	len = f__printf(format, appfunc, arg);
 	va_end(arg);
 
 	return (len);

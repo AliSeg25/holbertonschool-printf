@@ -40,10 +40,11 @@ int f__printf(const char *format, t appfunc[], va_list arg)
 			i++;
 		}
 		else
-		{
-			my_write(format[i]);
-			len++;
-		}
+			while (format[i] != '\0')
+			{
+				my_write(format[i]);
+				len++;
+			}
 
 	}
 	return (len);

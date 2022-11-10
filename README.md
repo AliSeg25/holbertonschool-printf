@@ -15,7 +15,7 @@ int _printf(const char * format);
 
 format represents, as its name suggests, what the output will be made of
 (integer, string...). Its principle is as follows: each time there is a %,
-printf looks at the letter following this % and writes the corresponding
+_printf looks at the letter following this % and writes the corresponding
 variable in the parameters.
 
 The ... means that it is a variadic function, which can take a variable

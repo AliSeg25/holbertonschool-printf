@@ -88,7 +88,7 @@ Length:[39, 39]
 Length:[39, 39]
 ```
 ## Flowchart
-C:\Users\buraa\OneDrive\Bureau\flowchart.png
+
 
 ## Return value
 If succesful the total number of characters written is returned.On

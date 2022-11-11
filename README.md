@@ -87,6 +87,9 @@ printf("Length:[%d, %i]\n", len2, len2);
 Length:[39, 39]
 Length:[39, 39]
 ```
+## Flowchart
+C:\Users\buraa\OneDrive\Bureau\flowchart.png
+
 ## Return value
 If succesful the total number of characters written is returned.On
 failure a nevative number is returned

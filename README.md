@@ -7,7 +7,7 @@ The _printf function sends a formatted string to the standard output.
 
 #### Prototype
 ```
-int _printf(const char * format);
+int _printf(const char * format, ...);
 ```
 
 format represents, as its name suggests, what the output will be made of

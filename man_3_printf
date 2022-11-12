@@ -22,5 +22,18 @@ There are many options
 .TP
 \fB-%i\fP
 %i : Print a integer in base 10.
+.SH EXAMPLE
+To print a string
+
+/**
+ * main - Entry point
+ *
+ * Return: 0 on success, error code otherwise
+ */
+int main(void)
+{
+	len = _printf("A char inside a sentence: %c. Did it work?\n", 'F')
+	return (0);
+}
 .SH AUTHOR
-Caudia Bura ; Ali Segueg
+Claudia Bura ; Ali Segueg
